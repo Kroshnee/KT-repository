@@ -15,7 +15,7 @@ for i in range (N ):
     # random.random returns a random double in range 0-1.
     x = random.random() + 1
     y = random.random()
-    # Condition checks if the random point falls in the inscribed circle.
+   
     
     if y <= (1/x):
         outcome = 1
@@ -23,8 +23,8 @@ for i in range (N ):
         outcome = 0
     
     count_in += outcome
-    # Percentage of how many times it did fall into the circle.
-    # Analitically, this equals Ac/As = pi/4.
+    
+    
     fraction_in = count_in /( i +1)
 
     # Store the results into the array.
@@ -46,3 +46,4 @@ plt.ylabel(" Result [ -] ")
 plt.xlabel(" Iteration [ -] ")
 print("Approximation of ln2 to 2dp is " + str(round(fraction_in,2)))
 plt.show()
+
